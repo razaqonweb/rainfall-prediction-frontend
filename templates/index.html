@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main>
+        <!-- 'pressure', 'dewpoint', 'humidity', 'cloud', 'sunshine','winddirection', 'windspeed'
+         -->
+         <div class="result-container" style="display:none;"></div>
+        <div class="container">
+            <h2><i class="fa-solid fa-cloud-showers-heavy"></i> Rainfall Prediction App</h2>
+            <div class="form-container">
+                <form  method="POST">
+                    <div class="input-container">
+                        <input type="text" id="pressure" placeholder="Pressure">
+                        <input type="text" id="dewpoint" placeholder="Dewpoint">
+                        <input type="text" id="humidity" placeholder="Humidity">
+                        <input type="text" id="cloud" placeholder="Cloud">
+                        <input type="text" id="sunshine" placeholder="Sunshine">
+                        <input type="text" id="winddirection" placeholder="Wind Direction">
+                        <input type="text" id="windspeed" placeholder="Wind Speed">
+                        <input type="submit" value="Predict">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
