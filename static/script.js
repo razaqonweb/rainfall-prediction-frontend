@@ -37,8 +37,13 @@ submitButton.addEventListener("click", async (event) => {
   const values = getValues();
 
   // Send the values to the server using fetch
+  const apiUrl = {
+    dev: "http://localhost:8080/predict",
+    prod: "https://rainfall-prediction-api.onrender.com/predict",
+  };
+  
   try {
-    const response = await fetch("http://localhost:8080/predict", {
+    const response = await fetch(apiUrl.prod, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
